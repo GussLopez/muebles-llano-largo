@@ -53,8 +53,13 @@ export default function Header() {
               </Link>
             </li>
             <li className="hidden md:block">
-              <Link href="/muebles" className="flex items-center font-semibold text-sm hover:text-(--secundario) transition-colors">
+              <Link href="/#nuestros-muebles" className="flex items-center font-semibold text-sm hover:text-(--secundario) transition-colors">
                 Muebles
+              </Link>
+            </li>
+            <li className="hidden md:block">
+              <Link href="/#contacto" className="flex items-center font-semibold text-sm hover:text-(--secundario) transition-colors">
+                Contacto
               </Link>
             </li>
             <li className="flex md:hidden ">
@@ -64,7 +69,6 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <Link href={'/contacto'} className="bg-primary text-white px-3 py-2 font-medium rounded hidden md:block hover:bg-[--secundario] hover:shadow-lg hover:-translate-y-0.5 transition-all ">Contáctanos</Link>
       </div>
     </header>
   )

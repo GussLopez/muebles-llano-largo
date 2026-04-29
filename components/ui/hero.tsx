@@ -33,7 +33,7 @@ export default function Hero() {
           >
             <Link
               className="flex items-center gap-2 bg-primary hover:bg-(--secundario) text-white py-2 px-3 rounded transition-all font-medium group"
-              href={'/muebles'}>
+              href={'/#nuestros-muebles'}>
               Ver Muebles
               <ArrowRight size={22} className="transition-transform duration-200 group-hover:translate-x-1 group-hover:scale-105" />
             </Link>
