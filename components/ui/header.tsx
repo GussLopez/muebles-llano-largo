@@ -1,6 +1,6 @@
 "use client"
 
-import { Menu, X } from "lucide-react"
+import { Armchair, Menu, X } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 
@@ -10,7 +10,12 @@ export default function Header() {
   return (
     <header className="bg-white shadow border-b border-gray-200">
       <div className="max-w-350 mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href={'/'} className="text-2xl font-bold hover:text-primary/80 transition-colors cursor-pointer text-primary">Muebleria Llano Largo</Link>
+        <Link
+          href={'/'}
+          className="flex items-center gap-2 text-2xl font-bold hover:text-primary/80 transition-colors cursor-pointer text-primary">
+          <Armchair size={30} />
+          Muebleria Llano Largo
+        </Link>
         {toggleSidebar && (
           <div
             className="fixed inset-0 z-10 bg-black/30 backdrop-blur-sm md:hidden"
