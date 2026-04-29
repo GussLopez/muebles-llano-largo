@@ -138,4 +138,7 @@
   html {
     @apply font-sans;
   }
+  h2 {
+    @apply scroll-mt-20;
+  }
 }
